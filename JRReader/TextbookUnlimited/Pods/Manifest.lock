@@ -1,0 +1,44 @@
+PODS:
+  - Alamofire (4.6.0)
+  - DeviceKit (1.8.1)
+  - IQKeyboardManager (6.1.1)
+  - MJRefresh (3.1.15.7)
+  - ReachabilitySwift (4.1.0)
+  - SnapKit (4.0.0)
+  - SwiftLint (0.27.0)
+  - SwiftyJSON (4.1.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.6.0)
+  - DeviceKit (~> 1.8.1)
+  - IQKeyboardManager (~> 6.1.1)
+  - MJRefresh (~> 3.1.15.7)
+  - ReachabilitySwift (~> 4.1.0)
+  - SnapKit (~> 4.0.0)
+  - SwiftLint (~> 0.27.0)
+  - SwiftyJSON (~> 4.1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - DeviceKit
+    - IQKeyboardManager
+    - MJRefresh
+    - ReachabilitySwift
+    - SnapKit
+    - SwiftLint
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  DeviceKit: eb29be542f5473b46b1c719011cf7de3ec5264ca
+  IQKeyboardManager: 79c57795f5c2408d259d37b9da2ed07efcbb5225
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+
+PODFILE CHECKSUM: 48e0cbdd1c6151624c2b14f173705f33e449b5e9
+
+COCOAPODS: 1.5.3

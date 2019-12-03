@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GCBookShelfCell" customModule="TextbookUnlimited" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="227" height="351"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QcC-y3-cEH">
+                    <rect key="frame" x="0.0" y="0.0" width="227" height="351"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weicheng" translatesAutoresizingMaskIntoConstraints="NO" id="OYB-x7-Lrs">
+                            <rect key="frame" x="0.0" y="0.0" width="227" height="308"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="OYB-x7-Lrs" secondAttribute="height" multiplier="98:133" id="usu-wi-5IM" userLabel="aspect = 98:133"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是书架中的书籍，测试书名行数" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yb9-8v-3BU">
+                            <rect key="frame" x="0.0" y="315" width="227" height="29"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view hidden="YES" alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xJM-Gv-Zya" userLabel="mengbanView">
+                            <rect key="frame" x="0.0" y="0.0" width="227" height="308"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWA-4z-aQt">
+                            <rect key="frame" x="199" y="5" width="23" height="23"/>
+                            <state key="normal" image="book_unselect"/>
+                            <state key="selected" image="book_select"/>
+                            <connections>
+                                <action selector="bookSelectBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Xwe-1u-igZ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="xJM-Gv-Zya" firstAttribute="top" secondItem="OYB-x7-Lrs" secondAttribute="top" id="Ab0-Zu-BlF"/>
+                        <constraint firstAttribute="bottom" secondItem="Yb9-8v-3BU" secondAttribute="bottom" constant="7" id="CX1-uC-B8H"/>
+                        <constraint firstItem="xJM-Gv-Zya" firstAttribute="leading" secondItem="OYB-x7-Lrs" secondAttribute="leading" id="JX0-gn-gx6"/>
+                        <constraint firstItem="Yb9-8v-3BU" firstAttribute="centerX" secondItem="OYB-x7-Lrs" secondAttribute="centerX" id="Waa-T2-n5C"/>
+                        <constraint firstItem="PWA-4z-aQt" firstAttribute="top" secondItem="QcC-y3-cEH" secondAttribute="top" constant="5" id="XRr-Gh-FnI"/>
+                        <constraint firstItem="OYB-x7-Lrs" firstAttribute="leading" secondItem="QcC-y3-cEH" secondAttribute="leading" id="Xrs-6d-jph" userLabel="Book ImageV Iew.leading = leading + 0"/>
+                        <constraint firstItem="xJM-Gv-Zya" firstAttribute="bottom" secondItem="OYB-x7-Lrs" secondAttribute="bottom" id="ZlN-tS-pLl"/>
+                        <constraint firstItem="Yb9-8v-3BU" firstAttribute="top" secondItem="OYB-x7-Lrs" secondAttribute="bottom" constant="7" id="dnT-Jf-b63"/>
+                        <constraint firstAttribute="trailing" secondItem="PWA-4z-aQt" secondAttribute="trailing" constant="5" id="h5u-HE-oSp"/>
+                        <constraint firstItem="Yb9-8v-3BU" firstAttribute="leading" secondItem="OYB-x7-Lrs" secondAttribute="leading" id="k9W-vH-I2l"/>
+                        <constraint firstItem="OYB-x7-Lrs" firstAttribute="top" secondItem="QcC-y3-cEH" secondAttribute="top" id="qNE-9D-Z3z" userLabel="Book ImageV Iew.top = top + 0"/>
+                        <constraint firstItem="Yb9-8v-3BU" firstAttribute="trailing" secondItem="OYB-x7-Lrs" secondAttribute="trailing" id="t97-DS-OeZ"/>
+                        <constraint firstAttribute="trailing" secondItem="OYB-x7-Lrs" secondAttribute="trailing" id="v0N-Xo-Ye1" userLabel="trailing = Book ImageV Iew.trailing + 0"/>
+                        <constraint firstItem="xJM-Gv-Zya" firstAttribute="trailing" secondItem="OYB-x7-Lrs" secondAttribute="trailing" id="x9g-NB-g2P"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="QcC-y3-cEH" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="7ol-U5-1he"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="QcC-y3-cEH" secondAttribute="trailing" id="ckC-ef-Wpp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="QcC-y3-cEH" secondAttribute="bottom" id="jwr-et-l0n"/>
+                <constraint firstItem="QcC-y3-cEH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="uiP-iv-9XT"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bookImageVIew" destination="OYB-x7-Lrs" id="VYk-D0-LfQ"/>
+                <outlet property="bookNameLabel" destination="Yb9-8v-3BU" id="esA-m4-T40"/>
+                <outlet property="bookSelectBtn" destination="PWA-4z-aQt" id="LRk-5J-Pu9"/>
+                <outlet property="mengbanView" destination="xJM-Gv-Zya" id="qoN-Fz-tTe"/>
+            </connections>
+            <point key="canvasLocation" x="-68" y="207.34632683658174"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="book_select" width="23" height="23"/>
+        <image name="book_unselect" width="23" height="23"/>
+        <image name="weicheng" width="77" height="92"/>
+    </resources>
+</document>

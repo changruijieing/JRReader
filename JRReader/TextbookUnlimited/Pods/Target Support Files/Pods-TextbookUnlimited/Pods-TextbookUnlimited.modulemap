@@ -1,0 +1,6 @@
+framework module Pods_TextbookUnlimited {
+  umbrella header "Pods-TextbookUnlimited-umbrella.h"
+
+  export *
+  module * { export * }
+}

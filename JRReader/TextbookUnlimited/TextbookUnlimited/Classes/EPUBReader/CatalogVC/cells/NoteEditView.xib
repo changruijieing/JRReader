@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="NoteEditView" customModule="TextbookUnlimited" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="365" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rki-iX-Qjf">
+                    <rect key="frame" x="0.0" y="0.0" width="121.5" height="45"/>
+                    <state key="normal" title=" 取消">
+                        <color key="titleColor" red="0.87153893709182739" green="0.30202573537826538" blue="0.42151522636413574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickCancel:" destination="iN0-l3-epB" eventType="touchUpInside" id="kPd-my-aRy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btV-cC-XJu">
+                    <rect key="frame" x="122" y="0.0" width="122" height="45"/>
+                    <state key="normal" title="编辑">
+                        <color key="titleColor" red="0.87153893709999997" green="0.30202573539999999" blue="0.4215152264" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickEdit:" destination="iN0-l3-epB" eventType="touchUpInside" id="ESo-sK-4A0"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMH-IQ-JU1">
+                    <rect key="frame" x="244" y="0.0" width="122" height="45"/>
+                    <state key="normal" title="删除">
+                        <color key="titleColor" red="0.87153893709999997" green="0.30202573539999999" blue="0.4215152264" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickDet:" destination="iN0-l3-epB" eventType="touchUpInside" id="qvD-IG-vSy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.94487851858139038" green="0.94902163743972778" blue="0.95303434133529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="btV-cC-XJu" firstAttribute="top" secondItem="rki-iX-Qjf" secondAttribute="top" id="063-BB-Jsg"/>
+                <constraint firstAttribute="bottom" secondItem="rki-iX-Qjf" secondAttribute="bottom" id="59w-te-WNM"/>
+                <constraint firstItem="HMH-IQ-JU1" firstAttribute="leading" secondItem="btV-cC-XJu" secondAttribute="trailing" id="6WC-qp-kdA"/>
+                <constraint firstItem="btV-cC-XJu" firstAttribute="width" secondItem="rki-iX-Qjf" secondAttribute="width" id="7GG-2X-N5X"/>
+                <constraint firstItem="HMH-IQ-JU1" firstAttribute="bottom" secondItem="btV-cC-XJu" secondAttribute="bottom" id="CgZ-Fy-27R"/>
+                <constraint firstItem="rki-iX-Qjf" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1:3" id="EPE-2F-Ved"/>
+                <constraint firstItem="btV-cC-XJu" firstAttribute="leading" secondItem="rki-iX-Qjf" secondAttribute="trailing" id="KqJ-dX-aaE"/>
+                <constraint firstItem="HMH-IQ-JU1" firstAttribute="top" secondItem="btV-cC-XJu" secondAttribute="top" id="Q44-Cc-xyt"/>
+                <constraint firstItem="HMH-IQ-JU1" firstAttribute="width" secondItem="btV-cC-XJu" secondAttribute="width" id="UgO-bO-YIQ"/>
+                <constraint firstItem="btV-cC-XJu" firstAttribute="bottom" secondItem="rki-iX-Qjf" secondAttribute="bottom" id="WGA-1y-4nb"/>
+                <constraint firstItem="rki-iX-Qjf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dgb-6T-Jox"/>
+                <constraint firstItem="rki-iX-Qjf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rDY-05-Hef"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnCancel" destination="rki-iX-Qjf" id="hop-DF-9dI"/>
+                <outlet property="btnDel" destination="HMH-IQ-JU1" id="bQP-IC-IIt"/>
+                <outlet property="btnEdit" destination="btV-cC-XJu" id="YLq-fo-ipJ"/>
+            </connections>
+            <point key="canvasLocation" x="19.5" y="-118.5"/>
+        </view>
+    </objects>
+</document>
